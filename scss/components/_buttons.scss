@@ -1,0 +1,22 @@
+.btn-clear-dark-bg {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-clear-dark-bg:hover {
+  background-color: #ffffff;
+  color: $color-accent;
+  border: 1px solid #000000;
+  font-weight: bold; /* Cambia el peso de la fuente al pasar el cursor */
+}
+
+.navbar div button {
+  background-color: $color-accent;
+}
+
+button > .navbar-toggler {
+  background-color: $color-accent;
+}

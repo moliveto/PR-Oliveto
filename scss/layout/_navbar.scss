@@ -1,0 +1,72 @@
+// @mixin subrayado {
+//   text-decoration: none;
+//   background-image: linear-gradient($color-subrayado, $color-subrayado);
+//   background-position: 0% 100%;
+//   background-repeat: no-repeat;
+//   background-size: 0% 2px;
+//   transition: background-size 0.3s;
+// }
+@mixin subrayado {
+  border-bottom: 3px solid $color-accent; /* Borde inferior de color contrastante */
+  padding-bottom: 5px; /* Espaciado inferior */
+}
+
+.navbar {
+  color: $color-inactive;
+  //background-color: $color-fondo;
+  
+  svg {
+    color: $color-accent;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      transition: all 2s;
+
+      a {
+        color: $color-inactive;
+        //@include subrayado;
+      }
+      a:hover {
+        @include subrayado;
+      }
+
+    }
+  }
+
+  .active {
+    color: $color-accent;
+    border-bottom: 3px solid $color-inactive; /* Borde inferior de color contrastante */
+    padding-bottom: 5px; /* Espaciado inferior */
+  }
+
+  .navbar-nav {
+    .nav-link.active {
+      color: $color-accent;
+    }
+  }
+}
+
+.navbar-brand {
+  color: $color-accent;
+  font-size: 20px;
+  font-weight: 400;
+  // background: linear-gradient(to right, #ffcc00, #ff9900); /* Fondo con gradiente */
+  //border-radius: 5px;
+  padding: 10px 15px;
+  transition: transform 0.3s ease; /* Transición de animación */
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1); /* Escala ligeramente al pasar el cursor */
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  background-size: 100% 2px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

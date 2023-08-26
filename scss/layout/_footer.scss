@@ -1,0 +1,22 @@
+footer {
+  //width: 100%;
+  //display: flex;
+  color: $color-accent;
+  //background-color: $color-footer;
+  // align-items: center !important;
+  // align-content: flex-end !important;
+  // justify-content: flex-end !important; 
+  // display: flex;
+  // align-items: center;
+  // justify-content: end;
+
+  i {
+    font-size: 2em;
+    color: $color-accent;
+    a {
+      &:hover {
+        background-size: 100% 2px;
+      }  
+    }
+  }
+}

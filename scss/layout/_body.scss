@@ -1,0 +1,21 @@
+body {
+  @extend html;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  
+  //color: $color-light-3;
+  font-family: $normal-text-font;
+  font-size: $normal-text-size;
+  font-weight: $normal-text-weight;
+}
+
+h1 {
+  color: $color-accent;
+  font-weight: 700 !important;
+}
+
+h2 {
+  color: $color-accent;
+}
