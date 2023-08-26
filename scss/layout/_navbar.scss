@@ -23,6 +23,7 @@
     li {
       list-style: none;
       transition: all 2s;
+      vertical-align: -webkit-baseline-middle;
 
       a {
         color: $color-inactive;
@@ -46,6 +47,12 @@
       color: $color-accent;
     }
   }
+}
+
+i.fas.fa-sun {
+  font-size: 15px;
+  margin-top: 2px;
+  vertical-align: -webkit-baseline-middle !important;
 }
 
 .navbar-brand {

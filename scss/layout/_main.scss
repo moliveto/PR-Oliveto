@@ -1,3 +1,9 @@
+@media only screen and (min-height: 800px) {
+  .main {
+    margin-top: 75px !important;
+  }
+}
+
 main {
   width: 100%;
 
@@ -8,8 +14,9 @@ main {
   }
 
   p {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
+
   // p {
   //   display: block;
   //   margin-block-start: 1em;
@@ -46,3 +53,8 @@ main {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.fa-circle-check {
+  color: #4b80dd;
+}
+
